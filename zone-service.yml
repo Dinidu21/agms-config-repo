@@ -8,3 +8,8 @@ spring:
     url: jdbc:mysql://localhost:3306/zone_db
     username: root
     password: yourpassword
+iot:
+  api:
+    base-url: http://104.211.95.241:8080/api
+    username: your_iot_username
+    password: your_iot_password
