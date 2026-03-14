@@ -6,7 +6,7 @@ spring:
     name: zone-service
 
   datasource:
-    url: jdbc:mysql://mysql:3306/zone_db
+    url: jdbc:mysql://mysql:3306/zone_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
