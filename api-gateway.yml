@@ -5,11 +5,11 @@ spring:
         - id: zone-service
           uri: lb://zone-service
           predicates:
-            - Path=/api/zones/**
+            - Path=/api/zones, /api/zones/**
         - id: sensor-service
           uri: lb://sensor-service
           predicates:
-            - Path=/api/sensors/**
+            - Path=/api/sensors, /api/sensors/**
         - id: automation-service
           uri: lb://automation-service
           predicates:
