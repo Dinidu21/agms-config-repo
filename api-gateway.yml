@@ -13,11 +13,11 @@ spring:
         - id: automation-service
           uri: lb://automation-service
           predicates:
-            - Path=/api/automation/**
+            - Path=/api/automation, /api/automation/**
         - id: crop-service
           uri: lb://crop-service
           predicates:
-            - Path=/api/crops/**
+            - Path=/api/crops, /api/crops/**
     loadbalancer:
       cache:
         ttl: 5s
