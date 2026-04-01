@@ -4,7 +4,3 @@ server:
 spring:
   application:
     name: crop-service
-  datasource:
-    url: jdbc:mysql://localhost:3306/crop_db
-    username: root
-    password: yourpassword
